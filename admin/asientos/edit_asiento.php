@@ -7,7 +7,7 @@ if (isset($_GET["id"])) {
     $stmt->execute([$id_asiento]);
     $asiento = $stmt->fetch(PDO::FETCH_ASSOC);
 }
-
+// hola
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $numero = $_POST["numero"];
     $estado = $_POST["estado"];
